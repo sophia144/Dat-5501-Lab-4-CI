@@ -1,6 +1,11 @@
+#import necessary libraries
 import unittest
-from best_fit_function import subtract_numbers
+import numpy as np
+import matplotlib.pyplot as plt
+import random
 
+#imports function from other file
+from best_fit_function import create_best_fit
 
 # class subtraction_checks(unittest.TestCase):
 #     def test_unit(self):
