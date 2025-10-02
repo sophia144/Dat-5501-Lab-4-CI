@@ -7,6 +7,8 @@ import random
 #imports function from other file
 from best_fit_function import create_best_fit
 
+create_best_fit()
+
 # class subtraction_checks(unittest.TestCase):
 #     def test_unit(self):
 

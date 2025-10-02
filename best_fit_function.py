@@ -19,6 +19,11 @@ def create_best_fit():
     #plot the best-fit line
     plt.plot(x_coordinates_fetched, best_fit_line, color='pink', label='Best Fit Line')
 
+    #finds the equation of the best fit line
+    m, c = np.polyfit(x_coordinates_fetched, y_coordinates_fetched, 1)
+    gradient = float(m)
+    intercept = float(c)
+
     #adding labels and legends
     plt.xlabel('X')
     plt.ylabel('Y')
@@ -27,3 +32,7 @@ def create_best_fit():
 
     #output the graph
     plt.show()
+
+    return [m, c]
+
+print(create_best_fit())
