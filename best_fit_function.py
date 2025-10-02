@@ -33,6 +33,6 @@ def create_best_fit():
     #output the graph
     plt.show()
 
-    return [m, c]
+    return [int(m), int(c)]
 
 print(create_best_fit())
