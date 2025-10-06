@@ -28,7 +28,7 @@ def create_best_fit():
     plt.legend()
 
     #output the graph for testing
-    plt.show()
+    #plt.show()
 
     return [float(m), float(c)]
 
