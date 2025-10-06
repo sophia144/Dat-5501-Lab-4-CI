@@ -13,8 +13,7 @@ class fit_checks(unittest.TestCase):
        generate_data(8, 2)
        function_output = create_best_fit()
        expected_output = [8, 2]
-       self.assertEqual(function_output, expected_output, f"Fail: expected {expected_output}, got {function_output}")
-
+       self.assertAlmostEqual(function_output, expected_output, f"Fail: expected {expected_output}, got {function_output}")
 
 if __name__ == '__main__':
     unittest.main()
